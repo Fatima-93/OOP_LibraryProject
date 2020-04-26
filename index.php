@@ -66,8 +66,10 @@ echo $Librarian1->returnBook();
 
 
 //OBJECT INSTANCE:
+
 $Book1 = new Book('To Kill a Mockingbird', 'Harper Lee', '1960', 'Historical');
 echo "\r\n";
+echo PHP_EOL;
 
 $Book1->searchBook('To Kill a Mockingbird');
 echo "\r\n";
