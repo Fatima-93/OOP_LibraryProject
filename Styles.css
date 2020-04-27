@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Apr 2020, 18:54:39
+    Author     : izabeladrabek
+*/
+
+.header {
+   padding:80px;
+       text-align: center;
+       background: black;
+       color: white;
+}
+body {
+   
+   padding: 15px 20px;
+   font: verdana, sans-serif;
+   background-colour: white;
+}
+
+header>h1 {
+   text-align: center;
+}
+form {
+width: 250px;
+height: 250px;
+margin: left;
+position: relative;
+background: whitesmoke;
+text-align: center;
+}
+
+
+.search{
+position: relative;
+/*padding: 30;*/
+}
+
