@@ -4,7 +4,6 @@
  *  
  */
 
-include autoload.php;
 
 interface Loanable {
 

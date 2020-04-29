@@ -6,20 +6,20 @@
  * and open the template in the editor.
  */
 
-namespace Media;
+//namespace Media;
 
 
-class Ebook extends Media {
+Class Ebook extends Media {
 
         Protected $readTime;
 
-        use Bookdetails;
+        Use bookDetails;
 
         public function getTitle() {
             echo "This Ebook title is called " . $this->title;
         }
 
-        public function SetDetails() {
+        public function setDetails() {
             
         }
 
@@ -31,4 +31,3 @@ class Ebook extends Media {
 
     }
     
-    $Ebook = new Ebook();

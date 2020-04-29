@@ -25,7 +25,7 @@ function myAutoLoader ($className) {
 }
 */
 
-require_once 'Library/LibraryClass.php';
+require_once 'Library/LibraryClasses.php';
 
 use Library\Person;
 use Library\Member;
@@ -40,6 +40,10 @@ echo "\r\n";
 echo $Person1->getUsername();
 echo "\r\n";
 
+$Is_It_a_Person = ($Person1 instanceof Person) ? "True" : "False";
+echo "It is " . $Is_It_a_Person . ' that $Person1 is a Person'; 
+echo "\r\n";
+
 /*Notes:
 *echo $Person1-> getfirstName();  this allows us to access private attributes as it is a public function. 
 *var_dump($Person1); prints all the data including the type regardless of the attributes visibility.
@@ -52,6 +56,10 @@ $Member2 = new Member('Lily', 'Smith', '12/02/94', 'Lily_02', 'azsx123', 2);
 echo $Member1->Login();
 echo "\r\n";
 echo $Member1->Logout();
+echo "\r\n";
+
+$Is_It_a_Member = ($Member1 instanceof Member) ? "True" : "False";
+echo "It is " . $Is_It_a_Member . ' that $Member1 is a Library Member'; 
 echo "\r\n";
 
 /*Notes:
