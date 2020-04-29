@@ -9,6 +9,7 @@
 
 //namespace Media;
 
+
 Class Book extends Media {
     
    Protected $readTime;
@@ -19,8 +20,8 @@ Class Book extends Media {
         echo "This book title is " . $this->title;
     }
 
-    public function setDetails() {
-        
+    public function setDetails($newtitle) {
+        $this->title == $newtitle ;
     }
 
     public function getMediaByProducer($name) {
