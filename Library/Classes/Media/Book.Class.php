@@ -7,21 +7,19 @@
  */
 
 
-namespace \Media;
+//namespace Media;
 
-class Book extends Media {
+Class Book extends Media {
     
-
-
    Protected $readTime;
 
-    use Bookdetails;
+    Use bookDetails;
 
     public function getTitle() {
         echo "This book title is " . $this->title;
     }
 
-    public function SetDetails() {
+    public function setDetails() {
         
     }
 
@@ -32,30 +30,3 @@ class Book extends Media {
     }
 }
 
-trait Bookdetails {
-
-    public function __construct($title, $By, $datePublished, $readTime, $genre) {
-        $this->title = $title;
-        $this->By = $By;
-        $this->datePublished = $datePublished;
-        $this->readTime = $readTime;
-        $this->genre = $genre;
-    }
-
-}
-
-
-trait Trackdetails {
-
-   public function __construct($title, $By, $datePublished, $genre, $length, $rating) {
-        $this->title = $title;
-        $this->By = $By;
-        $this->datePublished = $datePublished;
-        $this->genre = $genre;
-        $this->length = $length;
-        $this->rating = $rating;
-    }
-
-}
-
-   $gg = new Book('Harry Potter', 'JK Rowling', '1997', '6h', 'fantasy');

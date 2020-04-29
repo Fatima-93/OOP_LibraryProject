@@ -70,7 +70,7 @@ return "You've been logged out $this->username.";
 }
 
 //This is the librarian class, which we made inherit the same attributes as those in the parent class.
-class Librarian extends Person {
+Class Librarian extends Person {
 
 private $staffNumber; //the new unique attrbiute to this class.
 
@@ -120,23 +120,24 @@ Class Book {
             echo "Book not found, please try again.";
         }
     }
+}
     
-    public function UpdatingDetails($password, $pass, $cor){
-    if ($password == $pass){
-        echo PHP_EOL . "You are in, please enter the value you would like to change this to" . PHP_EOL;
-        $numberone = stream_get_line(STDIN, 100, "\n");
-        $this->$cor = $numberone ;
-        if ($numberone != null) {
-            echo "You are updating the book property **$cor** with the value of **$numberone**";
-        }
-}    
-    else{
-        PHP_EOL . die ("Sorry, wrong password!! try again");
-    }  
-}
-
-
-}
-
-
-
+//    public function UpdatingDetails($password, $pass, $cor){ //
+//    if ($password == $pass){
+//        echo PHP_EOL . "You are in, please enter the value you would like to change this to" . PHP_EOL;
+//        $numberone = stream_get_line(STDIN, 100, "\n");
+//        $this->$cor = $numberone ;
+//        if ($numberone != null) {
+//            echo "You are updating the book property **$cor** with the value of **$numberone**";
+//        }
+//}    
+//    else{
+//        PHP_EOL . die ("Sorry, wrong password!! try again");
+//    }  
+//}
+//
+//
+//}
+//
+// // public function __toString(){ //to check
+//      return $this->_firstName . " email is " . $this->_email . " and the username is " $this->_username

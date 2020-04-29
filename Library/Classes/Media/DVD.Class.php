@@ -6,21 +6,21 @@
  * and open the template in the editor.
  */
 
-namespace Media;
+//namespace Media;
 
 
-class DVD extends Media implements Loanable {
+Class DVD extends Media implements Loanable {
 
     Private $length;
     Private $rating;
 
-    use Trackdetails;
+    Use trackDetails;
 
     public function getTitle() {
         echo "This DVD is called " . $this->title;
     }
 
-    public function SetDetails() {
+    public function setDetails() {
         
     }
 
@@ -38,4 +38,3 @@ class DVD extends Media implements Loanable {
 
 }
 
-$DVD = new DVD();

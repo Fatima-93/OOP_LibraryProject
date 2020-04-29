@@ -6,19 +6,19 @@
  * and open the template in the editor.
  */
 
-namespace Media;
+//namespace Media;
 
-abstract class Media {
+Abstract Class Media {
 
-    protected $title;
-    protected $By;
-    protected $datePublished;
-    protected $genre;
-    protected $loanCost;
+    Protected $title;
+    Protected $By;
+    Protected $datePublished;
+    Protected $genre;
+    Protected $loanCost;
 
     abstract public function getTitle();
 
-    abstract public function SetDetails();
+    abstract public function setDetails();
 
     public function getMediaByProducer($name) {
         echo "Function is overridden, if you're seeing this there's a mistake";

@@ -6,20 +6,20 @@
  * and open the template in the editor.
  */
 
-namespace Media;
+//namespace Media;
 
-class Vinyl extends Media implements Loanable {
+Class Vinyl extends Media implements Loanable {
 
     Protected $length;
     Protected $rating;
 
-    use Trackdetails;
+    Use trackDetails;
 
     public function getTitle() {
         echo "This Vinyl is called " . $this->title;
     }
 
-    public function SetDetails() {
+    public function setDetails() {
         
     }
 
