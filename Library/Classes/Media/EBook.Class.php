@@ -9,11 +9,11 @@
 //namespace Media;
 
 
-Class Ebook extends Media {
+class Ebook extends Media {
 
-        Protected $readTime;
+        protected $readTime;
 
-        Use bookDetails;
+        use bookDetails;
 
         public function getTitle() {
             echo "This Ebook title is called " . $this->title;

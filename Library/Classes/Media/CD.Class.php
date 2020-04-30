@@ -8,12 +8,12 @@
 
 //namespace Media;
 
-Class CD extends Media implements Loanable {
+class CD extends Media implements Loanable {
 
-    Protected $length;
-    Protected $rating;
+    protected $length;
+    protected $rating;
 
-     Use trackDetails;
+     use trackDetails;
 
     public function getTitle() {
         echo "This CD is called " . $this->title;

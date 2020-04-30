@@ -8,12 +8,12 @@
 
 //namespace Media;
 
-Class Vinyl extends Media implements Loanable {
+class Vinyl extends Media implements Loanable {
 
-    Protected $length;
-    Protected $rating;
+    protected $length;
+    protected $rating;
 
-    Use trackDetails;
+    use trackDetails;
 
     public function getTitle() {
         echo "This Vinyl is called " . $this->title;

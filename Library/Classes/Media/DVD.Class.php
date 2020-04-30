@@ -9,12 +9,12 @@
 //namespace Media;
 
 
-Class DVD extends Media implements Loanable {
+class DVD extends Media implements Loanable {
 
     Private $length;
     Private $rating;
 
-    Use trackDetails;
+    use trackDetails;
 
     public function getTitle() {
         echo "This DVD is called " . $this->title;

@@ -8,13 +8,13 @@
 
 //namespace Media;
 
-Abstract Class Media {
+abstract class Media {
 
-    Protected $title;
-    Protected $By;
-    Protected $datePublished;
-    Protected $genre;
-    Protected $loanCost;
+    protected $title;
+    protected $by;
+    protected $datePublished;
+    protected $genre;
+    protected $loanCost;
 
     abstract public function getTitle();
 

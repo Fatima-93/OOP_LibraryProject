@@ -6,7 +6,7 @@
 
 
 
-Trait trackDetails {
+trait trackDetails {
 
    public function __construct($title, $By, $datePublished, $genre, $length, $rating) {
         $this->title = $title;
