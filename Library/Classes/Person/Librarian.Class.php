@@ -7,7 +7,7 @@
  */
 
 
-class Librarian extends Member implements Personable { //this class will inherit properties from Member, as well as implement the Personable interface
+class Librarian extends Member implements Library { //this class will inherit properties from Member, as well as implement the Personable interface
 
     private $staffNumber; 
 

@@ -23,7 +23,7 @@ class CD extends Media implements Loanable {
         
     }
 
-    public function loanCost() {
+    public function getloanCost() {
         echo "A CD costs £1.00 to rent"
         ;
     }

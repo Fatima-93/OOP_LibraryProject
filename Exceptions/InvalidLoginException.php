@@ -1,16 +1,14 @@
 <?php
 
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+ *Exceptions  multiple catches:
  */
 
 
 class InvalidLogin extends Exception {
 
     protected $email = "member@thelibrary.co.uk";
-    protected $message = "Invalid login. Please try again";
+    protected $message = "Invalid login.";
 
     public function getValidEmail() {
         return $this->email;
@@ -24,7 +22,7 @@ class InvalidLogin extends Exception {
 class PasswordTooWeak extends Exception {
 
     protected $password = "Azsx123!";
-    protected $message = "Password not strong enough. Please try again";
+    protected $message = "Password not strong enough.";
 
     public function getIdealPassword() {
         return $this->password;
@@ -56,15 +54,24 @@ try {
 
 try {
     MakeNewPassword();
-} catch (InvalidLogin $e) {
+} catch (PasswordTooWeak $e) {
     echo $e->getMessage();
      echo "\r\n";
-    echo "This password is too weak. Please ensure your new password has the following characters: " . $e->getIdealPassword();
+     echo "This password is too weak. Please ensure your new password has the following characters: " . $e->getIdealPassword();
      echo "\r\n";
 } catch (Exception $e) {
     echo "This is the general catch-all catch block";
     echo "\r\n";
     echo $e->getMessage();
 }
+
+
+//function login($email, $password, $emailS, $pass){
+//if ($emailS == $email && $pass == $password) {
+//echo "We have a match";
+//} else {
+//throw new UnknownUser();
+//}
+//
 
 

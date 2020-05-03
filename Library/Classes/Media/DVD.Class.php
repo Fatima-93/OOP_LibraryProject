@@ -24,7 +24,7 @@ class DVD extends Media implements Loanable {
         
     }
 
-    public function loanCost() {
+    public function getloanCost() {
         echo "A DVD costs £3 to loan.";
     }
 

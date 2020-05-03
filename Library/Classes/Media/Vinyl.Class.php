@@ -23,7 +23,7 @@ class Vinyl extends Media implements Loanable {
         
     }
 
-    public function loanCost() {
+    public function getloanCost() {
         echo "A Vinyl costs £5 to rent.";
     }
 
