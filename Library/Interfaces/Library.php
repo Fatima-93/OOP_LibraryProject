@@ -11,7 +11,7 @@
  */
 
 
-interface Personable {
+interface Library {
 
     //List all the relevant methods for Member and Librarian.
     public function loanItem($numItems);
@@ -23,5 +23,6 @@ interface Personable {
     public function login($email, $password, $emailS, $pass);
 
     public function logout();
+    
 }
 

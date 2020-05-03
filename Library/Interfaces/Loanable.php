@@ -7,7 +7,7 @@
 
 interface Loanable {
 
-    public function loanCost();
+    public function getloanCost();
 
     public function showAvailability();
 }

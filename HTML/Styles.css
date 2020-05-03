@@ -9,13 +9,10 @@ and open the template in the editor.
 */
 
 
-
-.header {
-   padding:80px;
-       text-align: center;
-       background: black;
-       color: white;
+title{
+    background-color: grey;
 }
+
 body {
    
    padding: 15px 20px;
@@ -31,8 +28,8 @@ width: 250px;
 height: 250px;
 margin: left;
 position: relative;
-background: whitesmoke;
-text-align: center;
+background: white;
+
 }
 
 
