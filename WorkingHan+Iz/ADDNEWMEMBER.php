@@ -40,14 +40,14 @@
        $stmt->bindParam(':phoneNumber', $phoneNumber);
        $stmt->bindParam(':addressID', $addressID);
        //$stmt->bindParam(':')
-       $firstname = 'John';
+       $firstname = 'Jonnie';
        $lastname = "Doe";
        $email="JD@gmail.com";
        $phoneNumber= 0711122;
-       $addressID="2";
+       $addressID=4;
        $stmt->execute();
-//Reading the data
-       echo "New Member Created!";
+////Reading the data
+//       echo "New Member Created!";
 //       $statment = $conn->query("SELECT*FROM customer_table");
 //       foreach ($statement as $row){
 //        echo $row[0]." ".$row[1]." ".$row[2]." ".$row[3]." ".$row[4].PHP_EOL;
