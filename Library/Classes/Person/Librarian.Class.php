@@ -11,9 +11,9 @@ class Librarian extends Member implements Personable { //this class will inherit
 
     private $staffNumber; 
 
-    public function __construct($firstName, $secondName, $email, $username, $password) {
+    public function __construct($firstName, $secondName, $email, $username, $password, $NoOnLoan, $staffNumber) {
         $this->staffNumber = $staffNumber;
-        parent::__construct($firstName, $secondName, $email, $username, $password);
+        parent::__construct($firstName, $secondName, $email, $username, $password, $NoOnLoan);
     }
 
     public function loanItem($numItems) {

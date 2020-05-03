@@ -14,7 +14,21 @@ class Member implements Personable {
     private $_username;
     private $_password;
     private $_LibraryCardNumber;
+    private $NoOnLoan;
 
+      public function __construct($firstName, $secondName, $email, $username, $password, $NoOnLoan) {
+        $this-> firstname = $firstName ;
+         $this-> secondName = $secondName ;
+          $this-> email = $email ;
+           $this-> username = $username ;
+            $this-> firstname = $firstName ;
+            $this-> NoOnLoan = $NoOnLoan;
+            
+      }
+
+    
+    
+    
     public function loanItem($numItems) {
         return "Item has been successfully loaned by $this->_LibraryCardNumber.";
     }
@@ -27,15 +41,45 @@ class Member implements Personable {
         
     }
 
-    public function login() {
-        return "You are logged in $this->_username.";
-    }
-
+   
     public function logout() {
         return "You are logged out $this->_username.";
     }
    
+    function checkOutMedia($NoChecked){
+   $total = ($this->NumberOnLoan) + $NoChecked;
+    if ($total < 5){
+    echo "Success! You have checked out $NoChecked items ";
+    }
+    elseif ($total >= 5){
+        throw new TooManyMediaItemsSorry();
+        echo "You are over the limit! Please reduce media amount to continue";
+        
+    }
+}
+
+
+//function login($email, $password){
+//    if ($this->email == $email && $this->password == $password) {
+//            echo "We have a match";
+//        } else {
+//            throw new UnknownUser();
+//        }
+//    }
+    
+    function login($email, $password, $emailS, $pass){
+    if ($emailS == $email && $pass == $password) {
+            echo "We have a match";
+        } else {
+            throw new UnknownUser();
+        }
+    }
+    
 
     }
 
 
+
+    
+    $emailS = "d@com";
+    $pass = '32';

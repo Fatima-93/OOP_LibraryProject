@@ -12,6 +12,8 @@
 spl_autoload_register('myAutoLoader'); //to register the autoloaded for the classes files
 spl_autoload_register('interfaceAutoloader'); //to register this autoloader for the interface files
 spl_autoload_register('traitAutoloader'); //to register this autoloader for the trait files
+spl_autoload_register('MyClass2Loader');
+
 
 function myAutoLoader($classname) {
 
@@ -26,6 +28,24 @@ function myAutoLoader($classname) {
 
     include_once $fullpath;
 }
+
+function myClass2Loader($classname) {
+
+    $path = "Library/Classes/Person/"; //ensure you are loading everything inside the library file structure.
+    $extension = ".Class.php";
+
+    $fullpath = $path . $classname . $extension;
+
+    if (!file_exists($fullpath)) {
+        return false;
+    }
+
+    include_once $fullpath;
+}
+
+
+
+
 
 function interfaceAutoloader($interfacename) {
 

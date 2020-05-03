@@ -20,7 +20,7 @@ interface Personable {
 
     public function searchItem($numItems);
 
-    public function login();
+    public function login($email, $password, $emailS, $pass);
 
     public function logout();
 }
